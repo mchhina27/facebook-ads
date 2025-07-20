@@ -1,44 +1,28 @@
-# facebook-ads
-# Ad Click Prediction using Machine Learning
+# Facebook Ads Click Prediction
 
-This project predicts whether a user will click on an ad based on their **time spent on the site** and **salary**. The goal is to help businesses improve ad targeting and understand user behavior.
+This project predicts whether a user will click on a Facebook ad based on their behavior and demographics using logistic regression.
 
 ## 📊 Dataset
 
-- **Source:** Facebook Ads Data  
-- **Features Used:**  
-  - Time Spent on Site (in minutes)  
-  - Salary  
-- **Target:** Clicked (0 = No, 1 = Yes)
+- **File:** `Facebook_Ads_2.csv`
+- **Features used:**
+  - `Time Spent on Site`
+  - `Salary`
+  - `Clicked` (target variable: 0 = No, 1 = Yes)
 
-## 🧠 Models Used
+## 🔍 Process
 
-- Logistic Regression  
-- Random Forest Classifier  
-- XGBoost
+1. Load and inspect the data
+2. Visualize behavior patterns using `seaborn` and `matplotlib`
+3. Build a logistic regression model with scikit-learn
+4. Evaluate model performance using accuracy, confusion matrix, and classification report
 
-## ⚙️ Tools & Libraries
+## ✅ Results
 
-- Python (Pandas, NumPy, Scikit-learn, XGBoost)  
-- Power BI for visualization  
-- Jupyter Notebook (via Anaconda)
+- Achieved ~92% accuracy
+- Model is slightly better at predicting users who clicked (class 1)
 
-## 📈 Results
+## ⚙️ Requirements
 
-- Best model: **[mention best model]**  
-- Accuracy: **[e.g., 87%]**  
-- Key insight: Users with higher site time and mid-range salary showed higher ad click rates
-
-## 📁 How to Run
-
-1. Clone the repo  
-2. Open the Jupyter notebook  
-3. Run the cells to preprocess, train models, and evaluate
-
-## 📸 Visualizations
-
-Power BI dashboard included for churn trends, feature importance, and prediction output
-
----
-
-Let me know if you want the exact file — I can generate it for you to copy-paste or download.
+```bash
+pip install pandas seaborn matplotlib scikit-learn
